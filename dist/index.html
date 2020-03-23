@@ -4,20 +4,152 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/068819cc4e.js" crossorigin="anonymous"></script>
     <title>My Resume</title>
 </head>
-<body class="bg-blue-100">
-    <div class="container w-5/6">
-        <div class="top flex bg-gray-700 md:h-56 sm:h-40 box-border rounded">
-            <div class="md:h-56 flex w-1/3 justify-center items-center">
-                <img class="rounded lg:h-48 lg:w-48 md:h-40 md:w-40 sm:h-32 sm:w-40 h-24 w-24" src="img/resume pic.jpg" alt="">
+<body class="gradient">
+    <div class="container w-4/6 my-8">
+
+        <div class="top flex bg-gray-600 md:h-24 sm:h-20 box-border rounded">
+            <div class="md:h-48 flex w-1/3 justify-center items-center">
+                <img class="rounded lg:h-40 lg:w-40 md:h-32 md:w-32 sm:h-24 sm:w-32 h-24 w-24" src="img/resume pic.jpg" alt="">
             </div>
-            <div class="lg:h-64 flex w-2/3 box-border justify-center items-center">
-                <h2 class=" flex-shrink text-center xl:text-6xl md:text-5xl sm:text-4xl text-3xl text-white font-bold">ARNOLD FERNANDEZ PRING</h2>
+            <div class="lg:h-32 w-2/3 box-border">
+                <h2 class="text-center xl:text-4xl md:text-2xl sm:text-xl text-lg text-white font-bold">Hello! My Name is <span class="text-blue-300">Arnold</span></h2>
+                <p class="text-center xl:text-2xl md:text-xl sm:text-md text-md text-white">Im an average Web Developer</p>
             </div>
         </div>
+        <div class="middlewrap flex">
+            <div class="thumbnails w-1/3 mt-24 font-serif text-2xl">
 
-        <div class="middle max-h-1500px md:flex">
+                <div class="thumbnail is-nav-selected shadow-2xl hover:opacity-100 opacity-50 transition ease-out duration-300 rounded-full flex justify-between items-center m-2 py-2 pl-6">
+                    <i class="fas fa-info-circle"></i>
+                    <div class="flex justify-start w-4/5">
+                        <h2>Personal Info</h2>
+                    </div>
+                </div>
+                <div class="thumbnail shadow-2xl hover:opacity-100 opacity-50 transition ease-out duration-300 rounded-full flex justify-between items-center m-2 py-2 pl-6">
+                    <i class="fas fa-address-book"></i>
+                    <div class="flex justify-start w-4/5">
+                        <h2>Contacts</h2>
+                    </div>
+                </div>
+                <div class="thumbnail shadow-2xl hover:opacity-100 opacity-50 transition ease-out duration-300 rounded-full flex justify-between items-center m-2 py-2 pl-6">
+                    <i class="fas fa-university"></i>
+                    <div class="flex justify-start w-4/5">
+                        <h2>Education</h2>
+                    </div>
+                </div>
+                <div class="thumbnail shadow-2xl hover:opacity-100 opacity-50 hover:text-3xl transition ease-out duration-300 rounded-full flex justify-between items-center m-2 py-2 pl-6">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="flex justify-start w-4/5">
+                        <h2>Work Experience</h2>
+                    </div>
+                </div>
+                <div class="thumbnail shadow-2xl hover:opacity-100 opacity-50 transition ease-out duration-300 rounded-full flex justify-between items-center m-2 py-2 pl-6">
+                    <i class="fas fa-laptop-code"></i>
+                    <div class="flex justify-start w-4/5">
+                        <h2>Skill</h2>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="border-8 border-orange-300 rounded-lg main-carousel w-2/3" data-flickity='{ "cellAlign": "left", "contain": "true", "wrapAround": "true", "autoPlay": "1000"}'>
+                <div class="carousel-cell w-full">
+                    <div class="personbackground h-full px-10 py-5 rounded-lg bg-gray-500">
+                        <h2 class="mb-4 font-bold xl:text-4xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl">PERSONAL INFO</h2>
+                        <p class="font-light xl:text-xl md:text-lg">NAME: Arnold Fernandez Pring</p>
+                        <p class="font-light xl:text-xl md:text-lg">AGE: 25 YRS OLD</p>
+                        <p class="font-light xl:text-xl md:text-lg">SEX: MALE</p>
+                        <p class="font-light xl:text-xl md:text-lg">CIVIL STATUS: SINGLE</p>
+                        <p class="font-light xl:text-xl md:text-lg">CITIZENSHIP: FILIPINO</p>
+                        <p class="font-light xl:text-xl md:text-lg">DATE OF BIRTH: NOV. 3, 1994</p>
+                        <p class="font-light xl:text-xl md:text-lg">ADDRESS: 51 MARY LUZ ST. M. DELA CRUZ, PASAY CITY</p>
+                        <p class="font-light xl:text-xl md:text-lg">WEIGHT:64KG</p>
+                        <p class="font-light xl:text-xl md:text-lg">HEIGHT: 5'7</p>
+                    </div>
+                </div><div class="carousel-cell w-full">
+                    <div class="contacts w-full h-full rounded-lg bg-gray-500 text-center p-5">
+                        <h2 class="font-bold xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-2xl">CONTACTS</h2>
+                        <div class="cont-wrap mt-5 ">
+                            <div class="cont-details flex justify-between items-center py-3 p-24">
+                                <i class="fas fa-mobile-alt text-5xl pl-2"></i>
+                                <div class="flex justify-start w-3/5">
+                                    <p class="font-light xl:text-xl md:text-lg sm:text-lg">+639274512668</p>
+                                </div>
+                            </div>
+                            <div class="cont-details flex justify-between items-center py-3 p-24">
+                                <i class="far fa-envelope text-5xl"></i>
+                                <div class="flex justify-start w-3/5">
+                                    <p class="font-light xl:text-xl md:text-lg sm:text-lg">pringalingling@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="cont-details flex justify-between items-center py-3 p-24">
+                                <i class="fab fa-facebook-square text-5xl pl-1"></i>
+                                <div class="flex justify-start w-3/5">
+                                    <p class="font-light xl:text-xl md:text-lg sm:text-lg">@Ar Nold</p>
+                                </div>
+                            </div>
+                            <div class="cont-details flex justify-between items-center py-3 p-24">
+                                <i class="fab fa-instagram text-5xl pl-1"></i>
+                                <div class="flex justify-start w-3/5">
+                                    <p class="font-light xl:text-xl md:text-lg sm:text-lg">@arnoldpring</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-cell w-full">
+                    <div class="education h-full rounded-lg bg-gray-500 text-center p-5">
+                        <h2 class="font-bold xl:text-4xl lg:text-3xl md:text-2xl sm:text-2xl text-2xl">EDUCATION</h2>
+
+                        <p class="mt-5 font-bold xl:text-xl md:text-lg">TECHNOLOGICAL UNIVERSITY OF THE PHILIPPINES</p>
+                        <p class="font-light xl:text-xl md:text-lg">14 KM EAST SERVICE ROAD, TAGUIG, METRO MANILA</p>
+                        <p class="font-light xl:text-xl md:text-lg">COMPUTER ENGINEERING TECHNOLOGY</p>
+                        <p class="font-light xl:text-xl md:text-lg">2017-PRESENT</p>
+
+                        <p class="font-bold xl:text-xl md:text-lg">PASAY CITY WEST HIGH SCHOOL</p>
+                        <p class="font-light xl:text-xl md:text-lg">FIGUEROA ST. PASAY CITY, METRO MANILA</p>
+                        <p class="font-light xl:text-xl md:text-lg">2007-2011</p>
+
+                        <p class="font-bold xl:text-xl md:text-lg">HEN. PIO DEL PILLAR ELEM. SCHOOL</p>
+                        <p class="font-light xl:text-xl md:text-lg">P. BINAY ST. MAKATI CITY</p>
+                        <p class="font-light xl:text-xl md:text-lg">2000-2007</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="workexp rounded-lg h-full bg-gray-500 px-5">
+                        <h2 class="font-bold xl:text-3xl lg:text-2xl md:text-2xl sm:text-xl text-xl">WORK EXPERIENCE</h2>
+                        <p class="mt-5 font-bold xl:text-md md:text-sm">CUSTOMER SERVICE REPRESENTATIVE | FOCUS DIRECT INC. | 2017</p>
+                        
+                        <p class="font-light xl:text-lg md:text-md">Assisted customers in their subscription and purchase of food supplements and other fitness products.</p>
+
+                        <p class="mt-3 font-bold xl:text-md md:text-sm">SALES AGENT | MILVIK BIMA INSURANCE AGENCY | SEPT-DEC 2016</p>
+                        <p class="font-light xl:text-lg md:text-md">Sold company's insurance and reached out to new and existing clients.</p>
+
+                        <p class="mt-3 font-bold xl:text-md md:text-sm">FULL-TIME MISSIONARY | THE CHURCH OF JESUS CHRIST OF LATTER-DAY SAINTS | AUGUST 2014-2016</p>
+                        <p class="font-light xl:text-lg md:text-md">Invite others to come unto Christ by helping them receive the restored gospel through faith in Jesus Christ and His Atonement, repentance, baptism, receiving the gift of the Holy Ghost and enduring to the end.</p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="skills rounded-lg h-full bg-gray-500 px-10 py-5">
+                        <h2 class="mb-4 font-bold xl:text-4xl lg:text-3xl md:text-3xl sm:text-2xl text-2xl">SKILLS</h2>
+                        <p class="font-light xl:text-lg md:text-md">• Capable of verbally communicating with persons inside and outside organization.</p>
+                        <p class="font-light xl:text-lg md:text-md">• Capable of working in a team structure.</p>
+                        <p class="font-light xl:text-lg md:text-md">• Capable of planning, organizing and prioritizing work.</p>
+                        <p class="font-light xl:text-lg md:text-md">• Capable of using Microsoft Word, Powerpoint, Access and Excel</p>
+                        <p class="font-light xl:text-lg md:text-md">• Capable of using C, C++, html, css, vb.net Languages</p>
+                        <p class="font-light xl:text-lg md:text-md">• Capable of using mysql, phpmyadmin, MS Access quiries.</p>
+                        <p class="font-light xl:text-lg md:text-md">• Familiar with AutoCad and great at Adobe Photoshop CS6.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="middle max-h-1500px md:flex">
 
             <div class="rounded left max-h-full md:w-1/3 bg-green-300">
 
@@ -86,9 +218,14 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="rounded bottom bg-gray-700 h-12"></div>
 
     </div>
 </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>       
+
 </html>

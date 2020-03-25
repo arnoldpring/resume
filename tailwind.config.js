@@ -17,6 +17,7 @@ module.exports = {
     },
     fontSize: {
       'tiny': '0.95rem',
+      '2': '2rem',
     },
   },
     

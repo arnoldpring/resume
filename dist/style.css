@@ -11092,6 +11092,10 @@ video {
   color: #702459;
 }
 
+.text-2 {
+  font-size: 2rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
 }
@@ -13962,6 +13966,10 @@ video {
   height: 450px;
 }
 
+.h-350px {
+  height: 350px;
+}
+
 .h-300px {
   height: 300px;
 }
@@ -14138,6 +14146,149 @@ video {
 
   .workexp .desc {
     font-size: 0.875rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .greeting {
+    box-sizing: border-box;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .greeting h2 {
+    font-size: 1.875rem;
+  }
+
+  .greeting p {
+    font-size: 1.5rem;
+  }
+
+  .thumbnails > * {
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+
+  .main-carousel {
+    width: 66.666667%;
+    height: 350px;
+  }
+
+  .cont-details {
+    padding-left: 2rem;
+  }
+
+  .education h2 {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .workexp > :nth-child(even) {
+    margin: 0;
+  }
+
+  .skills {
+    padding-left: 0;
+    padding-right: 0;
+    padding-left: 1rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .main-carousel {
+    width: 75%;
+  }
+
+  .cont-wrap {
+    margin-bottom: 1rem;
+  }
+
+  .cont-details {
+    padding-left: 3rem;
+  }
+
+  .carousel-cell h2 {
+    margin-top: 1.25rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .pInfo p {
+    font-size: 1.125rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .pInfo h2 {
+    font-size: 1.5rem;
+    padding-bottom: 0;
+  }
+
+  .education span {
+    font-size: 1.125rem;
+  }
+
+  .education p {
+    font-size: 1.125rem;
+  }
+
+  .workexp h2 {
+    margin-top: 0;
+    font-size: 1.5rem;
+  }
+
+  .workexp > :nth-child(even) {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .workexp > :nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .workexp > :nth-child(5) {
+    font-size: 1rem;
+  }
+
+  .workexp > :nth-child(7) {
+    font-size: 1rem;
+  }
+
+  .skills p{
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .workexp h2, .skills h2{
+    font-size: 1.5rem;
+  }
+
+  .cont-wrap {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .pInfo p {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
+  .workexp h2{
+    margin-top: 0.75rem;
+  }
+}
+
+@media (min-width: 1250px) {
+  .thumbnails {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+  }
+
+  .skills > * {
+    padding-left: 2rem;
   }
 }
 
@@ -24605,6 +24756,10 @@ video {
 
   .sm\:focus\:text-pink-900:focus {
     color: #702459;
+  }
+
+  .sm\:text-2 {
+    font-size: 2rem;
   }
 
   .sm\:text-xs {
@@ -37940,6 +38095,10 @@ video {
     color: #702459;
   }
 
+  .md\:text-2 {
+    font-size: 2rem;
+  }
+
   .md\:text-xs {
     font-size: 0.75rem;
   }
@@ -51273,6 +51432,10 @@ video {
     color: #702459;
   }
 
+  .lg\:text-2 {
+    font-size: 2rem;
+  }
+
   .lg\:text-xs {
     font-size: 0.75rem;
   }
@@ -64604,6 +64767,10 @@ video {
 
   .xl\:focus\:text-pink-900:focus {
     color: #702459;
+  }
+
+  .xl\:text-2 {
+    font-size: 2rem;
   }
 
   .xl\:text-xs {

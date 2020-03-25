@@ -7,6 +7,9 @@
 .h-450px {
     height: 450px;
 }
+.h-350px {
+    height: 350px;
+}
 .h-300px {
     height: 300px;
 }
@@ -127,5 +130,103 @@
     }
     .workexp .desc {
         @apply text-sm;
+    }
+}
+
+@media (min-width: 640px) {
+    .greeting {
+        @apply box-border py-4;
+    }
+    .greeting h2 {
+        @apply text-3xl;
+    }
+    .greeting p {
+        @apply text-2xl;
+    }
+    .thumbnails > * {
+        @apply w-full pl-0 ml-0 mt-4;
+    }
+    .main-carousel {
+        @apply w-2/3 h-350px;
+    }
+    .cont-details {
+        @apply pl-8;
+    }
+    .education h2 {
+        @apply mb-8 text-2xl;
+    }
+    .workexp > :nth-child(even) {
+        @apply m-0;
+    }
+    .skills {
+        @apply px-0 pl-4;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-carousel {
+        @apply w-3/4;
+    }
+    .cont-wrap {
+        @apply mb-4;
+    }
+    .cont-details {
+        @apply pl-12;
+    }
+    .carousel-cell h2 {
+        @apply mt-5 mb-2;
+    }
+    .pInfo p {
+        @apply text-lg px-2;
+    }
+    .pInfo h2 {
+        @apply text-2xl pb-0;
+    }
+    .education span {
+        @apply text-lg;
+    }
+    .education p {
+        @apply text-lg;
+    }
+    .workexp h2 {
+        @apply mt-0 text-2xl;
+    }
+    .workexp > :nth-child(even) {
+        @apply text-base mt-2;
+    }
+    .workexp > :nth-child(3) {
+        @apply text-base;
+    }
+    .workexp > :nth-child(5) {
+        @apply text-base;
+    }
+    .workexp > :nth-child(7) {
+        @apply text-base;
+    }
+    .skills p{
+        @apply text-lg;
+    }
+}
+
+@media (min-width: 1024px) {
+    .workexp h2, .skills h2{
+        @apply text-2xl;
+    }
+    .cont-wrap {
+        @apply px-12;
+    }
+    .pInfo p {
+        @apply px-10;
+    }
+    .workexp h2{
+        @apply mt-3;
+    }
+}
+@media (min-width: 1250px) { 
+    .thumbnails {
+        @apply px-8 box-border;
+    }
+    .skills > * {
+        @apply pl-8;
     }
 }

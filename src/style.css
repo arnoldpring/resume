@@ -4,8 +4,11 @@
 
 @tailwind utilities;
 
-.h-1500px {
-    height: 1500px;
+.h-450px {
+    height: 450px;
+}
+.h-300px {
+    height: 300px;
 }
 .leftpanel {
     margin-top: 5%;
@@ -13,7 +16,10 @@
 .carousel-cell {
     object-fit: cover;
     width: 100%;
-    height: 400px;
+    height: 100%;
+}
+.flickity-viewport {
+    height: 100% !important;
 }
 .flickity-page-dots {
     display: none;
@@ -21,9 +27,105 @@
 .flickity-button {
     display: none;
 }
+.thumbnail {
+    @apply shadow-2xl cursor-pointer opacity-25 transition ease-out duration-300 rounded-full flex justify-between items-center h-10
+}
 .is-nav-selected, .thumbnail:hover{
     opacity: 1;
 }
 .gradient {
     background-image: linear-gradient(to left, rgb(71, 230, 230), rgb(74, 154, 230));
+}
+.carousel-cell {
+    @apply rounded-lg h-full bg-gray-500;
+}
+.pInfo {
+    @apply font-light;
+}
+.cont-details {
+    @apply flex justify-between items-center py-3 pr-8;
+}
+.education span {
+    @apply font-bold;
+}
+.education p, .skills p {
+    @apply font-light text-sm;
+}
+.workexp .desc {
+    @apply font-light text-xs;
+}
+
+@media (min-width: 425px) {
+    .thumbnails > :first-child h2, :nth-child(4) h2 {
+        @apply text-tiny;
+    }
+    .workexp h2 {
+        @apply text-2xl pt-6;
+    }
+    .greeting p {
+        @apply text-lg;
+    }
+}
+
+@media (min-width: 480px) {
+    .greeting h2 {
+        @apply text-xl;
+    }
+}
+
+@media (min-width: 500px) {
+    .greeting h2 {
+        @apply text-3xl;
+    }
+    .thumbnails > :nth-child(2) h2,:nth-child(3) h2, :nth-child(5) h2 {
+        @apply text-xl;
+    }
+    .thumbnails > :first-child h2, :nth-child(4) h2 {
+        @apply text-lg;
+    }
+    .main-carousel {
+        @apply h-300px;
+    }
+    .top img {
+        @apply w-32;
+    }
+    .pInfo h2 {
+        @apply pt-0 mb-0;
+    }
+    .contacts, .education {
+        @apply p-0;
+    }
+    .cont-details {
+        @apply pt-0 pl-20;
+    }
+    .cont-wrap {
+        @apply mt-3;
+    }
+    .education h2 {
+        @apply mb-2;
+    }
+    .workexp {
+        @apply px-2;
+    }
+    .workexp > :nth-child(even) {
+        @apply mt-2;
+    }
+    .workexp h2 {
+        @apply pt-0;
+    }
+    .skills {
+        @apply py-0;
+    }
+    .skills h2 {
+        @apply mb-0;
+    }
+}
+
+@media (min-width: 580px) {
+    .skills p{
+        @apply text-base;
+    }
+    .workexp .desc {
+        @apply text-sm;
+    }
 }

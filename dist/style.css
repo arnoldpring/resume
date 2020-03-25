@@ -3869,6 +3869,10 @@ video {
   height: 6rem;
 }
 
+.h-28 {
+  height: 7rem;
+}
+
 .h-32 {
   height: 8rem;
 }
@@ -11128,6 +11132,10 @@ video {
   font-size: 4rem;
 }
 
+.text-tiny {
+  font-size: 0.95rem;
+}
+
 .italic {
   font-style: italic;
 }
@@ -13950,8 +13958,12 @@ video {
   transition-duration: 1000ms;
 }
 
-.h-1500px {
-  height: 1500px;
+.h-450px {
+  height: 450px;
+}
+
+.h-300px {
+  height: 300px;
 }
 
 .leftpanel {
@@ -13962,7 +13974,11 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  height: 400px;
+  height: 100%;
+}
+
+.flickity-viewport {
+  height: 100% !important;
 }
 
 .flickity-page-dots {
@@ -13973,12 +13989,156 @@ video {
   display: none;
 }
 
+.thumbnail {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  opacity: 0.25;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  transition-duration: 300ms;
+  border-radius: 9999px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 2.5rem
+}
+
 .is-nav-selected, .thumbnail:hover{
   opacity: 1;
 }
 
 .gradient {
   background-image: linear-gradient(to left, rgb(71, 230, 230), rgb(74, 154, 230));
+}
+
+.carousel-cell {
+  border-radius: 0.5rem;
+  height: 100%;
+  background-color: #a0aec0;
+}
+
+.pInfo {
+  font-weight: 300;
+}
+
+.cont-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 2rem;
+}
+
+.education span {
+  font-weight: 700;
+}
+
+.education p, .skills p {
+  font-weight: 300;
+  font-size: 0.875rem;
+}
+
+.workexp .desc {
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+@media (min-width: 425px) {
+  .thumbnails > :first-child h2, :nth-child(4) h2 {
+    font-size: 0.95rem;
+  }
+
+  .workexp h2 {
+    font-size: 1.5rem;
+    padding-top: 1.5rem;
+  }
+
+  .greeting p {
+    font-size: 1.125rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .greeting h2 {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width: 500px) {
+  .greeting h2 {
+    font-size: 1.875rem;
+  }
+
+  .thumbnails > :nth-child(2) h2,:nth-child(3) h2, :nth-child(5) h2 {
+    font-size: 1.25rem;
+  }
+
+  .thumbnails > :first-child h2, :nth-child(4) h2 {
+    font-size: 1.125rem;
+  }
+
+  .main-carousel {
+    height: 300px;
+  }
+
+  .top img {
+    width: 8rem;
+  }
+
+  .pInfo h2 {
+    padding-top: 0;
+    margin-bottom: 0;
+  }
+
+  .contacts, .education {
+    padding: 0;
+  }
+
+  .cont-details {
+    padding-top: 0;
+    padding-left: 5rem;
+  }
+
+  .cont-wrap {
+    margin-top: 0.75rem;
+  }
+
+  .education h2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .workexp {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .workexp > :nth-child(even) {
+    margin-top: 0.5rem;
+  }
+
+  .workexp h2 {
+    padding-top: 0;
+  }
+
+  .skills {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .skills h2 {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 580px) {
+  .skills p{
+    font-size: 1rem;
+  }
+
+  .workexp .desc {
+    font-size: 0.875rem;
+  }
 }
 
 @media (min-width: 640px) {
@@ -17222,6 +17382,10 @@ video {
 
   .sm\:h-24 {
     height: 6rem;
+  }
+
+  .sm\:h-28 {
+    height: 7rem;
   }
 
   .sm\:h-32 {
@@ -24483,6 +24647,10 @@ video {
     font-size: 4rem;
   }
 
+  .sm\:text-tiny {
+    font-size: 0.95rem;
+  }
+
   .sm\:italic {
     font-style: italic;
   }
@@ -30547,6 +30715,10 @@ video {
 
   .md\:h-24 {
     height: 6rem;
+  }
+
+  .md\:h-28 {
+    height: 7rem;
   }
 
   .md\:h-32 {
@@ -37808,6 +37980,10 @@ video {
     font-size: 4rem;
   }
 
+  .md\:text-tiny {
+    font-size: 0.95rem;
+  }
+
   .md\:italic {
     font-style: italic;
   }
@@ -43872,6 +44048,10 @@ video {
 
   .lg\:h-24 {
     height: 6rem;
+  }
+
+  .lg\:h-28 {
+    height: 7rem;
   }
 
   .lg\:h-32 {
@@ -51133,6 +51313,10 @@ video {
     font-size: 4rem;
   }
 
+  .lg\:text-tiny {
+    font-size: 0.95rem;
+  }
+
   .lg\:italic {
     font-style: italic;
   }
@@ -57197,6 +57381,10 @@ video {
 
   .xl\:h-24 {
     height: 6rem;
+  }
+
+  .xl\:h-28 {
+    height: 7rem;
   }
 
   .xl\:h-32 {
@@ -64456,6 +64644,10 @@ video {
 
   .xl\:text-6xl {
     font-size: 4rem;
+  }
+
+  .xl\:text-tiny {
+    font-size: 0.95rem;
   }
 
   .xl\:italic {
